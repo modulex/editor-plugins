@@ -70,7 +70,7 @@ function runCmd(cmd, args, fn) {
 }
 
 gulp.task('buildCss', ['buildCssIframe'], function (cb) {
-  var joycss = './joycss/bin/joycss';
+  var joycss = './tools/joycss/bin/joycss';
   var less = './assets/editor.less';
   var out = '../build/assets';
   runCmd('node', ['--harmony', joycss, less, '-o', out], cb);

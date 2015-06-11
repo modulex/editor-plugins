@@ -855,13 +855,6 @@
             "fors": {},
             "namespaces": {}
         },
-        "lib/xiami-music/dialog.js": {
-            "name": "lib/xiami-music/dialog.js",
-            "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
         "lib/back-color.js": {
             "name": "lib/back-color.js",
             "modules": {},
@@ -1200,13 +1193,6 @@
         },
         "lib/word-filter.js": {
             "name": "lib/word-filter.js",
-            "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
-        "lib/xiami-music.js": {
-            "name": "lib/xiami-music.js",
             "modules": {},
             "classes": {},
             "fors": {},
@@ -3786,15 +3772,6 @@
             "namespace": "parserlib.css"
         },
         {
-            "file": "lib/xiami-music/dialog.js",
-            "line": 1,
-            "ignore": "xiami-music dialog",
-            "author": "yiminghe@gmail.com",
-            "class": "",
-            "module": "xiami-music",
-            "namespace": "parserlib.css"
-        },
-        {
             "file": "lib/back-color.js",
             "line": 1,
             "ignore": "backColor button.",
@@ -4242,15 +4219,6 @@
             "class": "",
             "module": "xiami-music",
             "namespace": "parserlib.css"
-        },
-        {
-            "file": "lib/xiami-music.js",
-            "line": 1,
-            "ignore": "xiami-music button",
-            "author": "yiminghe@gmail.com",
-            "class": "",
-            "module": "xiami-music",
-            "namespace": "parserlib.css"
         }
     ],
     "warnings": [
@@ -4409,10 +4377,6 @@
         {
             "message": "unknown tag: ignore",
             "line": " lib/video/dialog.js:1"
-        },
-        {
-            "message": "unknown tag: ignore",
-            "line": " lib/xiami-music/dialog.js:1"
         },
         {
             "message": "unknown tag: ignore",
@@ -4613,10 +4577,6 @@
         {
             "message": "unknown tag: ignore",
             "line": " lib/word-filter.js:1"
-        },
-        {
-            "message": "unknown tag: ignore",
-            "line": " lib/xiami-music.js:1"
         },
         {
             "message": "Missing item type\nLogger\n\nCopyright(c) Eward.song Limited.\nMIT Licensed\n\nAuthors:\n  Eward <eward.song@gmail.com> (http://shepherdwind.com)",
@@ -5008,10 +4968,6 @@
         },
         {
             "message": "Missing item type",
-            "line": " lib/xiami-music/dialog.js:1"
-        },
-        {
-            "message": "Missing item type",
             "line": " lib/back-color.js:1"
         },
         {
@@ -5209,10 +5165,6 @@
         {
             "message": "Missing item type",
             "line": " lib/word-filter.js:1"
-        },
-        {
-            "message": "Missing item type",
-            "line": " lib/xiami-music.js:1"
         }
     ]
 }

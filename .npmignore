@@ -1,4 +1,4 @@
-tools/gen/
+tools/
 nohup.out
 *.iml
 .idea/
@@ -20,4 +20,9 @@ out/
 node_modules/
 tmp/
 reports/
-build/
+assets/
+demo/
+guide/
+lib/
+gulpfile.js
+yuidoc.json

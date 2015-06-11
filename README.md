@@ -10,6 +10,12 @@ gulp server
 
 open http://localhost:8001/demo/index.html
 
+## 文档
+
+```
+gulp
+```
+
 
 ## 构建
 

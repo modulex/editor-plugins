@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/ordered-list/cmd',["editor","../list-utils/cmd"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/ordered-list/cmd',["editor","../list-utils/cmd"],function(require, exports, module) {
+ /**
  * @ignore
  * orderedList command
  * @author yiminghe@gmail.com

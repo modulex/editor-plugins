@@ -13,6 +13,8 @@ open http://localhost:8001/demo/index.html
 
 ## 构建
 
+安装 java
+
 ```
 cd editor-plugins
 npm install

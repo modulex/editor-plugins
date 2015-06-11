@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/maximize',["./maximize/cmd","./button"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/maximize',["./maximize/cmd","./button"],function(require, exports, module) {
+ /**
  * @ignore
  * Maximize plugin
  * @author yiminghe@gmail.com

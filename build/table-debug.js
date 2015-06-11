@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/table',["editor","./dialog-loader","./contextmenu","./button","util","ua","dom","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/table',["editor","./dialog-loader","./contextmenu","./button","util","ua","dom","node"],function(require, exports, module) {
+ /**
  * @ignore
  * Add table plugin for KISSY.
  * @author yiminghe@gmail.com

@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/contextmenu',["editor","menu","./focus-fix","event-dom","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/contextmenu',["editor","menu","./focus-fix","event-dom","node"],function(require, exports, module) {
+ /**
  * @ignore
  * contextmenu for kissy editor
  * @author yiminghe@gmail.com

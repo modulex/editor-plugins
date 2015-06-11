@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/xiami-music/dialog',["util","editor","../flash/dialog","../menubutton","dom","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/xiami-music/dialog',["util","editor","../flash/dialog","../menubutton","dom","node"],function(require, exports, module) {
+ /**
  * @ignore
  * xiami-music dialog
  * @author yiminghe@gmail.com

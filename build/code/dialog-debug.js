@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/code/dialog',["util","editor","menubutton","dom","../dialog","node","ua"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/code/dialog',["util","editor","menubutton","dom","../dialog","node","ua"],function(require, exports, module) {
+ /**
  * @ignore
  * insert program code dialog
  * @author yiminghe@gmail.com

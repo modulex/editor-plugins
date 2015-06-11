@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/video/dialog',["util","editor","io","../flash/dialog","../menubutton"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/video/dialog',["util","editor","io","../flash/dialog","../menubutton"],function(require, exports, module) {
+ /**
  * @ignore
  * video dialog
  * @author yiminghe@gmail.com

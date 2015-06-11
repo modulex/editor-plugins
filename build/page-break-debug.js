@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/page-break',["editor","./fake-objects","./button","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/page-break',["editor","./fake-objects","./button","node"],function(require, exports, module) {
+ /**
  * @ignore
  * pagebreak functionality
  * @author yiminghe@gmail.com

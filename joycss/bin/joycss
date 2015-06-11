@@ -1,0 +1,80 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var path = require('path');
+var program = require("commander");
+
+var pkg = require('../package.json');
+
+program.
+  version(pkg.version).
+  usage('[option] <file.css|file.less|file.scss ...>').
+  option('-c, --close', 'use compact layout').
+  option('-y, --vertical', 'vertical layout').
+  option('-x, --horizontal', 'horizontal range').
+  option('-a, --alpha', 'use png24[default use png8]').
+  option('-o, --output [value]', 'output dirname, default `build`').
+  option('--api [value]', 'api for image merge, support java and php').
+  option('', 'If no value, auto select php or java by which command').
+  option('--debug', 'show debug info');
+
+program.on('--help', function(){
+  console.log('  Examples:');
+  console.log('');
+  console.log('    $ joycss xx.css');
+  console.log('    $ joycss xx.less');
+  console.log('    $ joycss xx.less -o out');
+  console.log('    $ joycss xxx/');
+  console.log('');
+  console.log('  joycss@%s %s', pkg.version, __filename);
+  console.log('  Documentation can be found at http://joycss.org');
+  console.log('');
+});
+
+program.parse(process.argv);
+
+if (program.debug) {
+  process.env.DEBUG = 'joycss:*';
+} else {
+  process.env.DEBUG = 'joycss:Success';
+}
+
+var Joycss = require('../index');
+
+if (!program.args.length) {
+
+  program.help();
+
+} else {
+
+  var conf = {};
+
+  if (program.horizontal) conf.layout = 'horizontal';
+  if (program.vertical) conf.layout = 'vertical';
+  if (program.close) conf.layout = 'close';
+  if (program.alpha) conf.force8bit = false;
+
+  var filename = program.args[0];
+  var cwd = process.cwd();
+  var output = program.output || 'build';
+
+  conf.destCss = path.join(cwd, getName(filename, output));
+  conf.api = program.api;
+
+  new Joycss(path.join(cwd, filename), conf).
+    run(function(err){
+      if (err) throw new Error(err);
+    });
+}
+
+function getName(name, output){
+  var basename = path.basename(name);
+  var dest = path.join(name, '../', output, basename);
+  // 后缀改为.css
+  return dest.replace(/\.[\w]+$/, '.css');
+}
+
+/**
+ * vim: ft=javascript:tw=80:
+ */

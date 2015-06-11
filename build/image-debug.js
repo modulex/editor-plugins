@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/image',["./button","editor","./bubble","./contextmenu","./dialog-loader","util","ua","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/image',["./button","editor","./bubble","./contextmenu","./dialog-loader","util","ua","node"],function(require, exports, module) {
+ /**
  * @ignore
  * insert image for kissy editor
  * @author yiminghe@gmail.com

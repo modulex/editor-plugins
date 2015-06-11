@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>lib\font\ui.js - editor-plugins</title>
+    <title>lib/font/ui.js - editor-plugins</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -90,6 +90,8 @@
                 <li><a href="../classes/Outdent.html">Outdent</a></li>
             
                 <li><a href="../classes/PageBreak.html">PageBreak</a></li>
+            
+                <li><a href="../classes/parserlib.css.PropertyValuePart.html">parserlib.css.PropertyValuePart</a></li>
             
                 <li><a href="../classes/Preview.html">Preview</a></li>
             
@@ -232,7 +234,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: lib\font\ui.js</h1>
+                        <h1 class="file-heading">File: lib/font/ui.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
@@ -247,88 +249,91 @@ var Button = require(&#x27;../button&#x27;);
 var MenuButton = require(&#x27;../menubutton&#x27;);
 
 var FontSelect = MenuButton.Select.extend({
-    initializer: function () {
-        var self = this,
-            editor = self.get(&#x27;editor&#x27;);
-        self.on(&#x27;click&#x27;, function (ev) {
-            var v = ev.target.get(&#x27;value&#x27;),
-                cmdType = self.get(&#x27;cmdType&#x27;);
-            editor.execCommand(cmdType, v);
-        });
+  initializer: function () {
+    var self = this,
+      editor = self.get(&#x27;editor&#x27;);
+    self.on(&#x27;click&#x27;, function (ev) {
+      var v = ev.target.get(&#x27;value&#x27;),
+        cmdType = self.get(&#x27;cmdType&#x27;);
+      editor.execCommand(cmdType, v);
+    });
 
-        editor.on(&#x27;selectionChange&#x27;, function () {
-            if (editor.get(&#x27;mode&#x27;) === Editor.Mode.SOURCE_MODE) {
-                return;
+    editor.on(&#x27;selectionChange&#x27;, function () {
+      if (editor.get(&#x27;mode&#x27;) === Editor.Mode.SOURCE_MODE) {
+        return;
+      }
+
+      var cmdType = self.get(&#x27;cmdType&#x27;),
+        menu = self.get(&#x27;menu&#x27;),
+        children = menu.get &amp;&amp; menu.get(&#x27;children&#x27;);
+
+      if (children) {
+        // Check if the element is removable by any of
+        // the styles.
+        var currentValue = editor.queryCommandValue(cmdType);
+        if (currentValue !== false) {
+          currentValue = quoteNormalize((currentValue + &#x27;&#x27;).toLowerCase());
+          for (var j = 0; j &lt; children.length; j++) {
+            var item = children[j];
+            var value = item.get(&#x27;value&#x27;);
+            if (currentValue === quoteNormalize(value.toLowerCase())) {
+              self.set(&#x27;value&#x27;, value);
+              return;
             }
-
-            var cmdType = self.get(&#x27;cmdType&#x27;),
-                menu = self.get(&#x27;menu&#x27;),
-                children = menu.get &amp;&amp; menu.get(&#x27;children&#x27;);
-
-            if (children) {
-                // Check if the element is removable by any of
-                // the styles.
-                var currentValue = editor.queryCommandValue(cmdType);
-                if (currentValue !== false) {
-                    currentValue = (currentValue + &#x27;&#x27;).toLowerCase();
-                    for (var j = 0; j &lt; children.length; j++) {
-                        var item = children[j];
-                        var value = item.get(&#x27;value&#x27;);
-                        if (currentValue === value.toLowerCase()) {
-                            self.set(&#x27;value&#x27;, value);
-                            return;
-                        }
-                    }
-                }
-                self.set(&#x27;value&#x27;, null);
-            }
-        });
-    }
+          }
+        }
+        self.set(&#x27;value&#x27;, null);
+      }
+    });
+  }
 });
 
+function quoteNormalize(str) {
+  return str.replace(/(^[&#x27;&quot;])|([&#x27;&quot;]$)/g, &#x27;&quot;&#x27;);
+}
 
 var FontButton = Button.extend({
-    initializer: function () {
-        var self = this,
-            editor = self.get(&#x27;editor&#x27;),
-            cmdType = self.get(&#x27;cmdType&#x27;);
-        self.on(&#x27;click&#x27;, function () {
-            var checked = self.get(&#x27;checked&#x27;);
-            if (checked) {
-                editor.execCommand(cmdType);
-                editor.focus();
-            } else {
-                editor.execCommand(cmdType, false);
-                editor.focus();
-            }
-        });
-        editor.on(&#x27;selectionChange&#x27;, function () {
+  initializer: function () {
+    var self = this,
+      editor = self.get(&#x27;editor&#x27;),
+      cmdType = self.get(&#x27;cmdType&#x27;);
+    self.on(&#x27;click&#x27;, function () {
+      var checked = self.get(&#x27;checked&#x27;);
+      if (checked) {
+        editor.execCommand(cmdType);
+        editor.focus();
+      } else {
+        editor.execCommand(cmdType, false);
+        editor.focus();
+      }
+    });
+    editor.on(&#x27;selectionChange&#x27;, function () {
 
-            if (editor.get(&#x27;mode&#x27;) === Editor.Mode.SOURCE_MODE) {
-                return;
-            }
-            var cmdType = self.get(&#x27;cmdType&#x27;);
-            if (editor.queryCommandValue(cmdType)) {
-                self.set(&#x27;checked&#x27;, true);
-            } else {
-                self.set(&#x27;checked&#x27;, false);
-            }
-        });
-    }
+      if (editor.get(&#x27;mode&#x27;) === Editor.Mode.SOURCE_MODE) {
+        return;
+      }
+      var cmdType = self.get(&#x27;cmdType&#x27;);
+      if (editor.queryCommandValue(cmdType)) {
+        self.set(&#x27;checked&#x27;, true);
+      } else {
+        self.set(&#x27;checked&#x27;, false);
+      }
+    });
+  }
 }, {
-    ATTRS: {
-        checkable: {
-            value: true
-        },
-        mode: {
-            value: Editor.Mode.WYSIWYG_MODE
-        }
+  ATTRS: {
+    checkable: {
+      value: true
+    },
+    mode: {
+      value: Editor.Mode.WYSIWYG_MODE
     }
+  }
 });
 
 module.exports = {
-    Button: FontButton,
-    Select: FontSelect
+  Button: FontButton,
+  Select: FontSelect
 };
 
     </pre>

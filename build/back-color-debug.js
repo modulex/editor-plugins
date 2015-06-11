@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/back-color',["./color/btn","./back-color/cmd"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/back-color',["./color/btn","./back-color/cmd"],function(require, exports, module) {
+ /**
  * @ignore
  * backColor button.
  * @author yiminghe@gmail.com

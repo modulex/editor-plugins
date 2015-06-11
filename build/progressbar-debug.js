@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/progressbar',["base","util","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/progressbar',["base","util","node"],function(require, exports, module) {
+ /**
  * @ignore
  * progressbar ui
  * @author yiminghe@gmail.com

@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/fore-color/cmd',["../color/cmd"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/fore-color/cmd',["../color/cmd"],function(require, exports, module) {
+ /**
  * @ignore
  * foreColor command.
  * @author yiminghe@gmail.com

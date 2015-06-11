@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/preview',["./button","util"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/preview',["./button","util"],function(require, exports, module) {
+ /**
  * @ignore
  * preview for kissy editor
  * @author yiminghe@gmail.com

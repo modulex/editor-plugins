@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/heading/cmd',["editor"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/heading/cmd',["editor"],function(require, exports, module) {
+ /**
  * @ignore
  * Adds a heading tag around a selection or insertion point line.
  * Requires the tag-name string to be passed in as a value argument (i.e. "H1", "H6")

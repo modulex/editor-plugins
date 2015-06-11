@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/link/utils',["editor","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/link/utils',["editor","node"],function(require, exports, module) {
+ /**
  * @ignore
  * link utils
  * @author yiminghe@gmail.com

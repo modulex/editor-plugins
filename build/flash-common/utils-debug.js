@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/flash-common/utils',["swf","dom","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/flash-common/utils',["swf","dom","node"],function(require, exports, module) {
+ /**
  * @ignore
  * flash utilities
  * @author yiminghe@gmail.com

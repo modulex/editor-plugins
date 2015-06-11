@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/drag-upload',["util","editor","event-dom","node","dom"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/drag-upload',["util","editor","event-dom","node","dom"],function(require, exports, module) {
+ /**
  * @ignore
  * drag file support for html5 file&dd
  * @author yiminghe@gmail.com

@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/dialog-loader',["editor","overlay","dom","ua"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/dialog-loader',["editor","overlay","dom","ua"],function(require, exports, module) {
+ /**
  * @ignore
  * load editor's dialog dynamically
  * @author yiminghe@gmail.com

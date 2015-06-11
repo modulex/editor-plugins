@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/color/btn',["editor","../button","../overlay","../dialog-loader","node","util"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/color/btn',["editor","../button","../overlay","../dialog-loader","node","util"],function(require, exports, module) {
+ /**
  * @ignore
  * color button.
  * @author yiminghe@gmail.com

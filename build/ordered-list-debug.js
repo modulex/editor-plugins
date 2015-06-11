@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/ordered-list',["./list-utils/btn","./ordered-list/cmd"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/ordered-list',["./list-utils/btn","./ordered-list/cmd"],function(require, exports, module) {
+ /**
  * @ignore
  * Add ul/ol button.
  * @author yiminghe@gmail.com

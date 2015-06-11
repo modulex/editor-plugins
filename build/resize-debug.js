@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/resize',["dd","node","util"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/resize',["dd","node","util"],function(require, exports, module) {
+ /**
  * @ignore
  * resize functionality
  * @author yiminghe@gmail.com

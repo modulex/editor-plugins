@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/italic/cmd',["editor","../font/cmd"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/italic/cmd',["editor","../font/cmd"],function(require, exports, module) {
+ /**
  * @ignore
  * italic command.
  * @author yiminghe@gmail.com

@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/source-area',["editor","./button"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/source-area',["editor","./button"],function(require, exports, module) {
+ /**
  * @ignore
  * source editor for kissy editor
  * @author yiminghe@gmail.com

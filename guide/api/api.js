@@ -38,7 +38,8 @@ YUI.add("yuidoc-meta", function(Y) {
         "Undo",
         "UnorderedList",
         "Video",
-        "XiaMiMusic"
+        "XiaMiMusic",
+        "parserlib.css.PropertyValuePart"
     ],
     "modules": [
         "back-color",

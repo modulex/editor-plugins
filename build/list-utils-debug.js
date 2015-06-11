@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/list-utils',["node","dom","ua"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/list-utils',["node","dom","ua"],function(require, exports, module) {
+ /**
  * @ignore
  * list Utils
  * @author yiminghe@gmail.com

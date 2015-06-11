@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/button',["util","editor","button"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/button',["util","editor","button"],function(require, exports, module) {
+ /**
  * @ignore
  * Encapsulate KISSY toggle button for kissy editor
  * @author yiminghe@gmail.com

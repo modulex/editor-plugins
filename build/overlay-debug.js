@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/overlay',["editor","overlay","./focus-fix"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/overlay',["editor","overlay","./focus-fix"],function(require, exports, module) {
+ /**
  * @ignore
  * custom overlay  for kissy editor
  * @author yiminghe@gmail.com

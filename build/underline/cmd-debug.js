@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/underline/cmd',["editor","../font/cmd"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/underline/cmd',["editor","../font/cmd"],function(require, exports, module) {
+ /**
  * @ignore
  * underline command
  * @author yiminghe@gmail.com

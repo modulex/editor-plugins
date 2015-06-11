@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/fake-objects',["editor","html-parser","util","node","dom"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/fake-objects',["editor","html-parser","util","node","dom"],function(require, exports, module) {
+ /**
  * @ignore
  * fakeObjects for music ,video,flash
  * @author yiminghe@gmail.com

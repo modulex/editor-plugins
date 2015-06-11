@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/outdent',["editor","./button","./outdent/cmd"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/outdent',["editor","./button","./outdent/cmd"],function(require, exports, module) {
+ /**
  * @ignore
  * Add indent button.
  * @author yiminghe@gmail.com

@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/justify-left',["editor","./justify-left/cmd","./button","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/justify-left',["editor","./justify-left/cmd","./button","node"],function(require, exports, module) {
+ /**
  * @ignore
  * justifyLeft button.
  * @author yiminghe@gmail.com

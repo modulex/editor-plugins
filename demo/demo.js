@@ -47,7 +47,6 @@ require(['util', 'node'], function (util, Node) {
         ",table" +
         ",smiley" +
         ",flash" +
-        ",xiami-music" +
         ",video" +
         ",drag-upload").split(",");
 

@@ -1,5 +1,5 @@
-define('kg/editor-plugins/1.1.10/color/dialog',["editor","util","../dialog","dom","node"],function(require, exports, module) {
-/**
+define('kg/editor-plugins/1.2.0/color/dialog',["editor","util","../dialog","dom","node"],function(require, exports, module) {
+ /**
  * @ignore
  * color picker
  * @author yiminghe@gmail.com

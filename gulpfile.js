@@ -108,6 +108,7 @@ gulp.task('server', function () {
   });
   app.use(serveStatic(process.cwd()));
   app.listen(8001);
+  console.log('listening at 8001');
 });
 
 gulp.task('default', ['kmc', 'buildCss', 'buildApi']);

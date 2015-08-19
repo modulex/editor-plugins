@@ -52,7 +52,7 @@ require(['util', 'node'], function (util, Node) {
     var fullPlugins = [];
 
     util.each(plugins, function (p, i) {
-        fullPlugins[i] = "kg/editor-plugins/" + window.EDITOR_VERSION + '/' + p;
+        fullPlugins[i] = "editor-plugins/" + window.EDITOR_VERSION + '/' + p;
     });
 
     var pluginConfig = {

@@ -7,7 +7,7 @@
   require.config({
     packages: [
       {
-        name: 'kg/editor-plugins/' + (EDITOR_VERSION),
+        name: 'editor-plugins/' + (EDITOR_VERSION),
         path: location.href.indexOf('?build') === -1 ? '../lib' : '../build'
       }
     ]

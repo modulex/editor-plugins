@@ -8,7 +8,7 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <title>KISSY Editor Test</title>
     <link href="http://localhost:8080/kissy/5.0.3/css/base.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="../build/assets/editor.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/editor-plugins/1.2.2/assets/editor.css">
 </head>
 <body>
 <h1 style="font-size: 2em;text-align: center;margin: 2em;">Simple KISSY Editor</h1>
@@ -19,7 +19,10 @@
     <button onclick="window.newEditor.destroy();">destroy</button>
 </div>
 <script src="http://localhost:8080/kissy/5.0.3/seed-debug.js"></script>
-
+<script>
+    window.EDITOR_BASE= 'http://localhost:8080/editor-plugins/1.2.2/';
+    window.EDITOR_PATH= 'http://localhost:8080/editor-plugins/1.2.2/';
+</script>
 <script src="./init.js"></script>
 <script src="./demo.js"></script>
 </body>

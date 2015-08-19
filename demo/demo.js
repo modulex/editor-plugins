@@ -47,7 +47,6 @@ require(['util', 'node'], function (util, Node) {
         ",table" +
         ",smiley" +
         ",flash" +
-        ",video" +
         ",drag-upload").split(",");
 
     var fullPlugins = [];

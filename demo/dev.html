@@ -7,16 +7,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <title>KISSY Editor Test</title>
-    <link href="http://g.alicdn.com/kissy/k/5.0.1/css/base.css" rel="stylesheet"/>
+    <link href="http://localhost:8080/build/css/base.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="../build/assets/editor.css">
 </head>
 <body>
 <h1 style="font-size: 2em;text-align: center;margin: 2em;">Simple KISSY Editor</h1>
+
+
 <div style="width: 90%;margin: 20px auto;">
     <textarea id="ks-editor-textarea" style='width:600px;height:400px'></textarea>
     <button onclick="window.newEditor.destroy();">destroy</button>
 </div>
-<script src="//g.alicdn.com/kissy/k/5.0.1/seed-debug.js"></script>
+<script src="http://localhost:8080/build/seed-debug.js"></script>
+
 <script src="./init.js"></script>
 <script src="./demo.js"></script>
 </body>

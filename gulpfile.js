@@ -79,8 +79,7 @@ gulp.task('buildCss', ['buildCssIframe'], function (cb) {
 gulp.task('buildCssIframe', function () {
   mkdirp.sync('build/assets');
   shelljs.exec('cp -r assets/img build/assets');
-  shelljs.exec('cp -r assets/iframe.css build/assets/iframe.css');
-  shelljs.exec('cp -r assets/iframe.css build/assets/iframe-debug.css');
+  shelljs.exec('cp -r assets/swfstore.swf build/assets/swfstore.swf');
 });
 
 gulp.task('buildApi', function (cb) {
@@ -111,4 +110,8 @@ gulp.task('server', function () {
   console.log('listening at 8001');
 });
 
-gulp.task('default', ['kmc', 'buildCss', 'buildApi']);
+gulp.task('clean', function () {
+  shelljs.exec('rm -rf build');
+});
+
+gulp.task('default', ['clean', 'kmc', 'buildCss', 'buildApi']);
